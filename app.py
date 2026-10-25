@@ -1,5 +1,6 @@
 import streamlit as st
 import qrcode
+import base64
 from io import BytesIO
 from urllib.parse import quote_plus
 
@@ -40,7 +41,7 @@ st.markdown(
     }
     [data-testid="stHeader"] { background: transparent; }
     
-    /* THIS IS THE FIX: We removed #MainMenu so the settings stay visible */
+    /* We removed #MainMenu so the settings stay visible */
     footer { visibility: hidden; }
     
     div.stButton > button, div.stFormSubmitButton > button {
@@ -117,7 +118,6 @@ questions = [
         "search": "Shreya Ghoshal Thodi Si Daaru song",
         "hint": "Look at the 4th song on the screenshot I sent you. 🥂",
     },
-    
     {
         "question": "Did you remind Jopu about a Bengaluru concert? What was his reaction at that moment? 👀🤨",
         "options": [
@@ -130,7 +130,6 @@ questions = [
         "search": "concerts happening in Bengaluru on 22 November 2026",
         "hint": "Why is Jopu acting like the main suspect in his own investigation? 🕵️‍♀️"
     },
-
     {
         "question": "Which song from the list was featured in the gritty crime series 'Mirzapur'? 🔪",
         "options": ["Vaaroon Forever", "Kalyani (Remix)", "Saibo", "Thodi Si Daaru"],
@@ -282,7 +281,7 @@ elif st.session_state.stage == "team_prompt":
 
 
 # =========================================================
-# STAGE 4 — THE TEASER (QR CODE PAGE FOR GDRIVE)
+# STAGE 4 — THE TEASER (CLICKABLE QR CODE PAGE)
 # =========================================================
 
 elif st.session_state.stage == "teaser":
@@ -295,13 +294,19 @@ elif st.session_state.stage == "teaser":
     st.write(f"You are officially going on a date with your Jopu on **{CONCERT_DATE}**. 🥂💗")
     
     st.warning("But *where* are we going? And *who* are we seeing? That part is a secret hidden in the link below. 🤫")
+
     
-    st.write("After scanning, don't forget to click on Continue button below. Grab your phone, open your camera, and scan this code to unlock the reveal.")
+    st.write(
+        "I know you'll be opening this on your phone anyway 😂 "
+        "but let's keep it dramatic! Scan the QR code or just tap it directly. "
+        "BUTTT 👀💗 come back to this screen and hit the Continue button below... "
+        "there's more surprise waiting for you, baby! 🎁🤭"
+    )
+
     
     # Generate the QR Code directly from the GDRIVE_LINK
     if "PASTE_YOUR_GOOGLE_DRIVE_LINK_HERE" in GDRIVE_LINK or not GDRIVE_LINK.startswith("https://"):
         st.error("⚠️ **Hold up, Jopu!** You forgot to paste your Google Drive link at the top of the code. The QR code won't work until you do.")
-        # Fallback so the app doesn't crash during testing
         active_link = "https://drive.google.com" 
     else:
         active_link = GDRIVE_LINK.strip()
@@ -314,15 +319,29 @@ elif st.session_state.stage == "teaser":
             
             image_buffer = BytesIO()
             qr_image.save(image_buffer, format="PNG")
-            image_buffer.seek(0)
-
-            st.image(image_buffer, caption="Scan me to reveal the secret 💗", use_container_width=True)
+            
+            # Convert image to base64 so we can make it clickable
+            img_base64 = base64.b64encode(image_buffer.getvalue()).decode()
+            
+            # Display clickable image
+            st.markdown(
+                f'''
+                <div style="text-align: center;">
+                    <a href="{active_link}" target="_blank">
+                        <img src="data:image/png;base64,{img_base64}" width="100%" style="max-width: 350px; cursor: pointer; border-radius: 20px; box-shadow: 0 4px 15px rgba(176,85,123,0.2);" alt="Tap to open">
+                    </a>
+                    <p style="color: #873f60; font-weight: bold; margin-top: 15px; font-size: 1.1rem;">👆 Tap the QR code to open it directly! 👆</p>
+                </div>
+                ''', 
+                unsafe_allow_html=True
+            )
+            
         except Exception as error:
             st.error(f"Couldn't generate the QR code: {error}")
 
-    st.info("*(P.S. If you're already reading this on your phone, you can just click the button below to open the link directly!)*")
+    st.write("---")
     
-    if st.button("I scanned it! Let's continue... 🎁", use_container_width=True):
+    if st.button("I scanned it / opened the link! Let's continue... 🎁", use_container_width=True):
         next_stage("dance_gift")
 
 
@@ -353,7 +372,7 @@ elif st.session_state.stage == "dance_gift":
 
 
 # =========================================================
-# STAGE 6 — FINAL GOODBYE (NO QR CODE NEEDED HERE)
+# STAGE 6 — FINAL GOODBYE
 # =========================================================
 
 elif st.session_state.stage == "final_goodbye":
@@ -366,7 +385,6 @@ elif st.session_state.stage == "final_goodbye":
     st.write("---")
 
     st.markdown("<h3 style='text-align: center;'>I love you, my yappy Shuno. 💗</h3>", unsafe_allow_html=True)
-    # Fixed the typo here from "ende Jopu" to "your Jopu"
     st.markdown("<p style='text-align: center;'>Love,<br>your Jopu. ♡</p>", unsafe_allow_html=True)
     st.caption("End of investigation. Beginning of another lovely memory.")
 
