@@ -295,14 +295,54 @@ elif st.session_state.stage == "teaser":
     
     st.warning("But *where* are we going? And *who* are we seeing? That part is a secret hidden in the link below. 🤫")
 
-    
+    # --- YOUR HEARTFELT MESSAGES ---
     st.write(
-        "I know you'll be opening this on your phone anyway 😂 "
-        "but let's keep it dramatic! Scan the QR code or just tap it directly. "
+        "Baby, I planned this knowing you'd probably be at the office 😂💗 "
+        "I just thought the QR code would look cool, so I kept it for the aesthetic. "
+        "You don't actually need to scan it, silly! Just tap on it directly. 🤭💕 "
+        "After clicking it and reading what's waiting for you inside, "
         "BUTTT 👀💗 come back to this screen and hit the Continue button below... "
-        "there's more surprise waiting for you, baby! 🎁🤭"
+        "because your Jopu has MORE surprises for you, baby! 🎁🥹💕"
     )
 
+    st.write(
+        "Also, remember that night when you were texting me from home, saying..."
+    )
+
+    st.info(
+        "\"No control\n\n"
+        "kya karu\n\n"
+        "kuch toh bol\n\n"
+        "Tod de ye badan\n\n"
+        "take my love\n\n"
+        "Take my soul\" 🫠"
+    )
+
+    st.write(
+        "And then you asked me, \"Am I cheating on you?\" 😭 Baby, NOOO. "
+        "I was literally getting THIS ready for you! I got occupied building "
+        "your surprise while chatting with you at the same time. Imagine being "
+        "suspected of cheating when I'm out here building a whole surprise for you. "
+        "THE ALLEGATIONS, SHUNO. 💀💗"
+    )
+
+    st.write(
+        "But jokes aside, there's something I wanted you to know. ❤️‍🩹 "
+        "I was hurt that night. Even if the lights were off or people were around you, "
+        "I wished you'd found a tiny moment to send me a chotusa goodnight message. "
+        "Just one little message, baby. That's all I wanted. I even called you "
+        "and deleted a few messages afterward. I wasn't trying to fight with you "
+        "or make you feel guilty. I just missed you, and I wanted to feel remembered "
+        "too. I didn't express it properly then, but I wanted you to know how I felt. 🥹❤️"
+    )
+
+    st.write(
+        "Anyway, my yappy Shuno, go enjoy your little QR surprise, then come back "
+        "here and click Continue. I'm not done with you yet, baby. 🤭🎁💕"
+    )
+    # --- END OF MESSAGES ---
+
+    st.write("---")
     
     # Generate the QR Code directly from the GDRIVE_LINK
     if "PASTE_YOUR_GOOGLE_DRIVE_LINK_HERE" in GDRIVE_LINK or not GDRIVE_LINK.startswith("https://"):
