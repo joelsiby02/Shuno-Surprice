@@ -155,7 +155,7 @@ questions = [
         "question": "⚠️ **TRAP ACTIVATED:** I knew you'd make it this far. But this final lock requires 2 detectives, So request help from your buddy here obv you know whom i'm talking about. 👥",
         "options": ["The Unstoppable India Tour - SG", "The Magic Voice Tour", "Jopu's Secret Concert", "I can't solve this, I'm getting my friend!"],
         "answer": "The Unstoppable India Tour - SG",
-        "search": "Shreya Ghoshal Unstoppable India Tour Bengaluru",
+        "search": "Upcoming music concerts in Bengaluru",
         "hint": "Which concert is happening in Bengaluru on 22nd November 2026?",
     },
 ]
