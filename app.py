@@ -105,14 +105,7 @@ questions = [
         "hint": "Think of that magical voice you absolutely adore. 🎶",
     },
     {
-        "question": "Psst... there's an artist who was born in the same city as you. Who is this magical singer we're talking about? 👀",
-        "options": ["Shreya Ghoshal", "Sunidhi Chauhan", "Lata Mangeshkar", "Jopu's imaginary friend"],
-        "answer": "Shreya Ghoshal",
-        "search": "Shreya Ghoshal born in West Bengal",
-        "hint": "It's the same voice your Jopu is taking you to see! 🥰",
-    },
-    {
-        "question": "If Jopu was planning a romantic mystery dinner for you, which song from the list translates to 'A little bit of alcohol'? 🥂",
+        "question": "If Jopu was planning a romantic mystery dinner for you, which song would he choose to add 'A little bit of alcohol'? 🥂",
         "options": ["Thodi Si Daaru", "Tere Liye", "Kalyani (Remix)", "Vaaroon Forever"],
         "answer": "Kalyani (Remix)",
         "search": "Shreya Ghoshal Thodi Si Daaru song",
@@ -127,15 +120,15 @@ questions = [
             "Suddenly got busy and started acting all innocent 🤨💀"
         ],
         "answer": "Changed the topic faster than a Wi-Fi connection 💀",
-        "search": "concerts happening in Bengaluru on 22 November 2026",
+        "search": "upcoming concerts happening in Bengaluru",
         "hint": "Why is Jopu acting like the main suspect in his own investigation? 🕵️‍♀️"
     },
-    {
-        "question": "Which song from the list was featured in the gritty crime series 'Mirzapur'? 🔪",
-        "options": ["Vaaroon Forever", "Kalyani (Remix)", "Saibo", "Thodi Si Daaru"],
-        "answer": "Vaaroon Forever",
-        "search": "Vaaroon Forever Mirzapur song",
-        "hint": "The title means 'Rain'. 🌧️",
+        {
+        "question": "Psst... there's an artist who was born in the same city as you. Who is this magical singer we're talking about? 👀",
+        "options": ["Shreya Ghoshal", "Sunidhi Chauhan", "Lata Mangeshkar", "Jopu's imaginary friend"],
+        "answer": "Shreya Ghoshal",
+        "search": "Kalyani song bengali artist",
+        "hint": "Why do you need a Hint for this? Eww babe 🥰",
     },
     {
         "question": "Which Bollywood film features the iconic song 'Dola Re Dola'? ✨",
