@@ -303,8 +303,7 @@ elif st.session_state.stage == "teaser":
     )
 
  
-with st.container(border=True):
-    st.write(
+with st.info(
         "\"No control\n\n"
         "kya karu\n\n"
         "kuch toh bol\n\n"
