@@ -390,11 +390,30 @@ elif st.session_state.stage == "dance_gift":
     st.write("---")
     st.markdown("### ✨ Introducing... ✨")
     st.header("THE KALYANI DANCE CHALLENGE")
+
+    st.write("Baby, I have one little wish. ❤️")
+
+    st.write(
+        "I'd love for you to make a little video of yourself doing the Kalyani "
+        "dance at your office. I still remember that Instagram story of you and "
+        "Anjum dancing, just before our first date. I rewatched it so many times, "
+        "and your dance kept replaying in my head throughout my workday. I remember "
+        "thinking, 'Damn, is this the woman I'm about to date?' You genuinely gave "
+        "me chills then, Shuno, and I'd love to feel that magic again. Just you "
+        "being you. ❤️"
+    )
     
-    st.write("If possible, I have one little wish.")
-    st.write("I'd love you to record a short video of yourself doing the Kalyani dance. No pressure to make it perfect. Just you, your favourite moves, and that adorable energy I love so much.")
-    
-    st.info("And when you get home, I will be waiting to watch you perform the whole dance just for him. 🥹💗")
+    st.write(
+    "And when you get home, I'll be waiting in the room with the speakers on. "
+    "You better come and give your Jopu a private Kalyani performance yourself. "
+    "Because, baby girl, as amazing as the concert is going to be, I already know "
+    "no concert performance could ever come close to watching you dance for me. "
+    "The stage might be theirs, but my favourite performer will always be you. "
+    "And trust me, Shuno, I'll be sitting in the front row with the biggest smile "
+    "and absolutely no intention of taking my eyes off you. 😉❤️ "
+    "No hints, no reminders, no negotiations. That private show is something "
+    "your Jopu is very much looking forward to, baby girl! 😂😘"
+    )
     
     st.write("Think of it as a tiny memory made just for us. Your smile, your dance, your moment.")
     st.markdown("#### Deal, my yappy Shuno? 🫶")
