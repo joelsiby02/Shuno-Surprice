@@ -302,7 +302,7 @@ elif st.session_state.stage == "teaser":
         "Also, remember that night when you were texting me from home, saying..."
     )
 
-    st.info(
+    st.box(
         "\"No control\n\n"
         "kya karu\n\n"
         "kuch toh bol\n\n"
@@ -320,18 +320,20 @@ elif st.session_state.stage == "teaser":
     )
 
     st.write(
-        "But jokes aside, there's something I wanted you to know. ❤️‍🩹 "
-        "I was hurt that night. Even if the lights were off or people were around you, "
-        "I wished you'd found a tiny moment to send me a chotusa goodnight message. "
-        "Just one little message, baby. That's all I wanted. I even called you "
-        "and deleted a few messages afterward. I wasn't trying to fight with you "
-        "or make you feel guilty. I just missed you, and I wanted to feel remembered "
-        "too. I didn't express it properly then, but I wanted you to know how I felt. 🥹❤️"
-    )
-
+    "But jokes aside, there's something I wanted you to know. ❤️ "
+    "I know you had a tough day that night, and I understand you were tired. "
+    "You did say goodnight, baby. I just asked for a little voice note because "
+    "I wanted to hear your voice before sleeping. Was that too much to ask? "
+    "I wasn't looking for a long conversation or trying to keep you awake. "
+    "I just missed you and wanted a tiny moment with you. 🥹 "
+    "I even called and deleted a few messages because I didn't know how to "
+    "express what I was feeling. I'm not saying this to make you feel guilty; "
+    "I just wanted you to understand why I felt hurt that night. "
+    "Sometimes, hearing your voice is all I need to feel close to you. ❤️"
+)
     st.write(
         "Anyway, my yappy Shuno, go enjoy your little QR surprise, then come back "
-        "here and click Continue. I'm not done with you yet, baby. 🤭🎁💕"
+        "here and click Continue. I'm not done with you yet, my baby girl."
     )
     # --- END OF MESSAGES ---
 
