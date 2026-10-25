@@ -39,7 +39,9 @@ st.markdown(
             linear-gradient(145deg, #fff9fb, #fff0f5 55%, #fff8fc);
     }
     [data-testid="stHeader"] { background: transparent; }
-    #MainMenu, footer { visibility: hidden; }
+    
+    /* THIS IS THE FIX: We removed #MainMenu so the settings stay visible */
+    footer { visibility: hidden; }
     
     div.stButton > button, div.stFormSubmitButton > button {
         background: linear-gradient(135deg, #e89ab6, #cc6f97);
@@ -357,7 +359,8 @@ elif st.session_state.stage == "final_goodbye":
     st.write("---")
 
     st.markdown("<h3 style='text-align: center;'>I love you, my yappy Shuno. 💗</h3>", unsafe_allow_html=True)
-    st.markdown("<p style='text-align: center;'>Love,<br>ende Jopu. ♡</p>", unsafe_allow_html=True)
+    # Fixed the typo here from "ende Jopu" to "your Jopu"
+    st.markdown("<p style='text-align: center;'>Love,<br>your Jopu. ♡</p>", unsafe_allow_html=True)
     st.caption("End of investigation. Beginning of another lovely memory.")
 
     if st.button("Relive the surprise from the beginning ↺"):
