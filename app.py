@@ -126,7 +126,7 @@ questions = [
             "Started smiling at his phone like a man hiding state secrets 📱",
             "Suddenly got busy and started acting all innocent 🤨💀"
         ],
-        "answer": "Suddenly got busy and started acting all innocent 🤨💀",
+        "answer": "Changed the topic faster than a Wi-Fi connection 💀",
         "search": "concerts happening in Bengaluru on 22 November 2026",
         "hint": "Why is Jopu acting like the main suspect in his own investigation? 🕵️‍♀️"
     },
