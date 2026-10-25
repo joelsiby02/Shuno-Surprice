@@ -11,7 +11,7 @@ from urllib.parse import quote_plus
 # PASTE YOUR GOOGLE DRIVE LINK HERE!
 # This is what the QR code will point to. 
 # Make sure your Drive link is set to "Anyone with the link can view".
-GDRIVE_LINK = "https://drive.google.com/file/d/1Tv5TbzRN2kDu03x8jcwwAuIhO-27MVGV/view?usp=sharing"
+GDRIVE_LINK = "https://drive.google.com/file/d/1jHRgJZkqOAPLUSSmQX7XtFtB7Mhep7Bb/view?usp=sharing"
 
 CONCERT_DATE = "Sunday, 22 November 2026"
 
