@@ -302,7 +302,9 @@ elif st.session_state.stage == "teaser":
         "Also, remember that night when you were texting me from home, saying..."
     )
 
-    st.box(
+ 
+with st.container(border=True):
+    st.write(
         "\"No control\n\n"
         "kya karu\n\n"
         "kuch toh bol\n\n"
@@ -310,6 +312,7 @@ elif st.session_state.stage == "teaser":
         "take my love\n\n"
         "Take my soul\" 🫠"
     )
+
 
     st.write(
         "And then you asked me, \"Am I cheating on you?\" 😭 Baby, NOOO. "
