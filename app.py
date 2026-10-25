@@ -113,17 +113,24 @@ questions = [
     {
         "question": "If Jopu was planning a romantic mystery dinner for you, which song from the list translates to 'A little bit of alcohol'? 🥂",
         "options": ["Thodi Si Daaru", "Tere Liye", "Kalyani (Remix)", "Vaaroon Forever"],
-        "answer": "Thodi Si Daaru",
+        "answer": "Kalyani (Remix)",
         "search": "Shreya Ghoshal Thodi Si Daaru song",
         "hint": "Look at the 4th song on the screenshot I sent you. 🥂",
     },
+    
     {
-        "question": "Imagine Shreya Ghoshal is performing live in Bengaluru on 22 November. What would you do? 🎤",
-        "options": ["Ask Jopu to book tickets immediately!", "Pretend I didn't see this question", "Ask Jopu to sing every song instead", "Sleep through the entire concert"],
-        "answer": "Ask Jopu to sing every song instead",
-        "search": "Shreya Ghoshal Bengaluru concert November 2026",
-        "hint": "Choose wisely, diva girl. Your Jopu is watching. 🤭",
+        "question": "Did you remind Jopu about the Bengaluru concert? What was his reaction at that moment? 👀🤨",
+        "options": [
+            "Acted way too normal... which was NOT normal 🤨",
+            "Changed the topic faster than a Wi-Fi connection 💀",
+            "Started smiling at his phone like a man hiding state secrets 📱",
+            "Suddenly got busy and started acting all innocent 🤨💀"
+        ],
+        "answer": "Suddenly got busy and started acting all innocent 🤨💀",
+        "search": "concerts happening in Bengaluru on 22 November 2026",
+        "hint": "Why is Jopu acting like the main suspect in his own investigation? 🕵️‍♀️"
     },
+
     {
         "question": "Which song from the list was featured in the gritty crime series 'Mirzapur'? 🔪",
         "options": ["Vaaroon Forever", "Kalyani (Remix)", "Saibo", "Thodi Si Daaru"],
