@@ -119,7 +119,7 @@ questions = [
     },
     
     {
-        "question": "Did you remind Jopu about the Bengaluru concert? What was his reaction at that moment? 👀🤨",
+        "question": "Did you remind Jopu about a Bengaluru concert? What was his reaction at that moment? 👀🤨",
         "options": [
             "Acted way too normal... which was NOT normal 🤨",
             "Changed the topic faster than a Wi-Fi connection 💀",
